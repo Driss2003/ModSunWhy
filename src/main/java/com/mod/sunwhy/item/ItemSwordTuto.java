@@ -18,17 +18,7 @@ public class ItemSwordTuto extends ItemSword {
 		// TODO Auto-generated constructor stub
 	}
 
-		
-		@Override
-	    public ItemStack onItemRightClick(ItemStack itemstack, World world, EntityPlayer player)
-		{
-		if (!world.isRemote)
-		{
-	    jobHandler metier = jobHandler.get(player);
-		ChatComponentTranslation comp = new ChatComponentTranslation("tu as " + metier.money +" XP");
-		player.addChatComponentMessage(comp);
-		}
-		return itemstack;
-		}
-	}
 
+}
+
+		
