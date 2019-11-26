@@ -30,7 +30,11 @@ import net.minecraftforge.common.util.EnumHelper;
 
 public class ItemMod 
 {
-	public static ToolMaterial toolTuto = EnumHelper.addToolMaterial("ToolTuto", 15, 4800, 35, 24, 40);
+	public static ToolMaterial addToolMaterial(String name, Integer a, Integer durability, Integer enchantments, Integer enhancements, Integer damages) {
+		return EnumHelper.addToolMaterial(name, a, durability, enchantments, enhancements, damages);
+	}
+	
+	public static ToolMaterial toolTuto = ItemMod.addToolMaterial("ToolTuto", 15, 4800, 35, 24, 40);
 	public static ToolMaterial Mylenium = EnumHelper.addToolMaterial("Mylenium", 15, 3600, 22, 10, 22);
 	public static ToolMaterial a = EnumHelper.addToolMaterial("a", 12, 1600, 15, 10, 15);
 	public static ToolMaterial Sunrouge = EnumHelper.addToolMaterial("a", 20, 10000, 55, 35, 50);
